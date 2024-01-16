@@ -41,3 +41,14 @@
 	color: whitesmoke;
 	border: none;
 }
+
+.login__form p{
+	font-weight: 500;
+}
+
+.login__form a{
+	text-decoration: none;
+	color: #0077b5;
+	font-weight: bold;
+	font-family: "Dm Mono";
+}

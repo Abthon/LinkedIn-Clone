@@ -9,8 +9,16 @@ import MyNetworkIcon from "@mui/icons-material/SupervisorAccount";
 import JobsIcon from "@mui/icons-material/BusinessCenter";
 import MessagingIcon from "@mui/icons-material/Chat";
 import NotificationIcon from "@mui/icons-material/Notifications";
+import {logOut} from "./slice/UserSlice"
+import {useDispatch} from "react-redux"
+import {auth} from "./firebase"
 
 function Header(){
+    const dispatch = useDispatch();
+    const logMeOut = function (){
+        dispatch(logOut());
+        auth.signOut();
+    }
     return (
         <div className="header">
             <div className="header__left">
@@ -26,7 +34,7 @@ function Header(){
                 <HeaderOption title="Jobs" Icon={JobsIcon} />
                 <HeaderOption title="Messaging" Icon={MessagingIcon} />
                 <HeaderOption title="Notifications" Icon={NotificationIcon} />
-                <HeaderOption title="Me" avatar="https://www.businessinsider.de/wp-content/uploads/2019/06/elon-musk.jpg" />
+                <HeaderOption title="Me" avatar="https://www.businessinsider.de/wp-content/uploads/2019/06/elon-musk.jpg" onClick={logMeOut} />
             </div>
         </div>
     )
