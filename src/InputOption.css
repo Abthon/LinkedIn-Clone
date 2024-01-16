@@ -1,0 +1,19 @@
+.inputOption{
+    display: flex;
+    margin-right: 15px;
+    color: grey;
+    padding: 10px 13px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inputOption:hover{
+    background: whitesmoke;
+    border-radius: 5px;
+}
+
+.inputOption > span{
+    font-weight: 600;
+    margin-left: 4px;
+}
+

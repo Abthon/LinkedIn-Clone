@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap');
+
+body{
+    background-color: hsl(45, 14%, 95%);
+}
+
+
+.app__body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    height: 100vh;
+    height: fit-content;
+    max-width: 1110px;
+    margin: 0px auto;
+}
